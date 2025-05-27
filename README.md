@@ -1,13 +1,60 @@
-# 💫 About Me:
-🔭 I’m currently working on various academic projects exploring AI for social good, ethical issues in AI, and statistical analysis.<br>👯 I’m looking to collaborate on projects that leverage data science for social impact.<br>🤝 I’m looking for help with advanced machine learning concepts, particularly in neural networks and model optimization.<br>🌱 I’m currently learning statistical modeling, deep learning, and natural language processing (NLP).<br>💬 Ask me about my experiences coding with limited data structures and implementing unconventional data handling methods.
+# NutriTrack 🍽️📱
 
+NutriTrack is an Android app built using Kotlin and Jetpack Compose for managing and monitoring patient nutritional intake. The app features secure authentication, AI-driven health insights, and comprehensive data tracking.
 
-## 🌐 Socials:
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/@grish.kehlot) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/krishnagehlot) 
+## 🌟 Features
 
-# 💻 Tech Stack:
-![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![R](https://img.shields.io/badge/r-%23276DC3.svg?style=for-the-badge&logo=r&logoColor=white) ![Bash Script](https://img.shields.io/badge/bash_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+- 🔐 **Authentication**
+  - **Login** and **Register** pages with encrypted password storage
+  - Patients claim accounts using `UserID` and `PhoneNumber`
+  - Persistent login until manual logout
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+- 🤖 **AI Integration**
+  - Integrates with **Fruity Vice API** for detailed nutritional data on fruits
+  - Uses **Gemini API** to provide AI-driven personalized health insights based on user data
 
+- 📊 **Food Intake Questionnaire**
+  - Patients record dietary intake through an interactive questionnaire
+  - Data linked to patient records using Room database foreign keys
 
+- 💾 **Room Database**
+  - Patient data is auto-loaded from CSV on first app launch
+  - Efficient local data storage with no repeated CSV imports
+
+- 🎨 **Modern UI**
+  - Built entirely with Jetpack Compose for a clean, responsive user experience
+
+## 🛠️ Tech Stack
+
+- **Language:** Kotlin
+- **UI:** Jetpack Compose
+- **Database:** Room
+- **Architecture:** MVVM
+- **APIs:** Fruity Vice API, Gemini API for AI health analytics
+
+## 🔒 Security
+
+- Passwords are hashed before storage
+- Secure token management for persistent login
+
+## 🚀 Getting Started
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/yourusername/NutriTrack.git
+2. Open the project in Android Studio.
+3. Run on emulator or physical device.
+4. On first launch, patient data will be imported automatically from CSV.
+
+## 📁 Folder Structure
+NutriTrack/
+├── app/
+│   ├── src/
+│   │   ├── main/java/...
+│   │   └── res/
+│   ├── build.gradle.kts
+├── build.gradle.kts
+├── settings.gradle.kts
+└── .gitignore
+
+Developed as part of Monash University Malaysia coursework in Android development (FIT2081).
