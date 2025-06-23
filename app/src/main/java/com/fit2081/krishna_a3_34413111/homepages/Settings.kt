@@ -224,7 +224,7 @@ fun Settings(modifier: Modifier = Modifier, navController: NavController, viewMo
                 }
                 Column(
                     modifier = Modifier
-                        .weight(1f)
+                        .weight(2f)
                         .padding(horizontal = 16.dp, vertical = 5.dp),
                     horizontalAlignment = Alignment.Start
                 ) {
@@ -268,7 +268,7 @@ fun Settings(modifier: Modifier = Modifier, navController: NavController, viewMo
                 }
                 Column(
                     modifier = Modifier
-                        .weight(1f)
+                        .weight(2f)
                         .padding(horizontal = 16.dp, vertical = 5.dp),
                     horizontalAlignment = Alignment.Start
                 ) {
